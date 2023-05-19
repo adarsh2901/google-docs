@@ -1,0 +1,93 @@
+/* Styles for the navbar */
+.navbar {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly horizontally */
+  align-items: center; /* Align items vertically */
+  padding: 10px; /* Add padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  position: sticky; /* Position the navbar as sticky */
+  top: 0; /* Position at the top */
+  z-index: 1; /* Set the stacking order */
+  background-color: #f3f3f3; /* Set the background color */
+}
+
+/* Styles for the left side of the navbar */
+.navbar__left {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Styles for the navbar logo */
+.navbar__logo {
+  width: 24px; /* Set the width */
+  margin-right: 10px; /* Add margin */
+}
+
+/* Styles for the document info section */
+.navbar__document-info {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Align items vertically */
+}
+
+/* Styles for the options in the navbar */
+.navbar__options {
+  display: flex; /* Use flexbox for layout */
+}
+
+/* Styles for each option in the navbar */
+.navbar__option {
+  margin-right: 10px; /* Add margin */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: #333; /* Set the text color */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+/* Styles for the right side of the navbar */
+.navbar__right {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Styles for the account section in the navbar */
+.navbar__account {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Styles for the icons in the navbar */
+.icon {
+  margin-right: 20px; /* Add margin */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+/* Styles for the user avatar in the navbar */
+.navbar__user-avatar {
+  width: 24px; /* Set the width */
+  margin-right: 10px; /* Add margin */
+  border-radius: 100%; /* Apply border radius */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+/* Styles for the share button in the navbar */
+.navbar__share-button {
+  background-color: #4285f4; /* Set the background color */
+  color: white; /* Set the text color */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 4px; /* Apply border radius */
+  margin-right: 25px; /* Add margin */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+/* Styles for printing */
+@media print {
+  body {
+    background: none; /* Remove background when printing */
+  }
+
+  /* Hide the navbar when printing */
+  .navbar {
+    display: none;
+  }
+}

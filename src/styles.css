@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #f3f3f3; /* Set the background color */
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for the text editor container */
+.container .ql-editor {
+  width: 8.5in; /* Set the width of the editor */
+  min-height: 11in; /* Set the minimum height of the editor */
+  padding: 1in; /* Set the padding */
+  margin: 1rem; /* Set the margin */
+  background-color: white; /* Set the background color */
+}
+
+/* Styles for the Quill container */
+.container .ql-container.ql-snow {
+  border: none; /* Remove the border */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the content horizontally */
+}
+
+/* Styles for the Quill toolbar */
+.container .ql-toolbar.ql-snow {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the content horizontally */
+  background-color: rgb(234, 235, 236); /* Set the background color */
+  border: none; /* Remove the border */
+}
+
+/* Styles for printing */
+@page {
+  margin: 1in; /* Set the margin for printed pages */
+}
+
+@media print {
+  body {
+    background: none; /* Remove background when printing */
+  }
+
+  /* Styles for the printed text editor */
+  .container .ql-editor {
+    width: 6.5in; /* Set the width for printed editor */
+    height: 9in; /* Set the height for printed editor */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    box-shadow: none; /* Remove box shadow */
+    align-self: flex-start; /* Align the editor to flex-start */
+  }
+
+  /* Hide the toolbar when printing */
+  .container .ql-toolbar.ql-snow {
+    display: none;
+  }
+}
